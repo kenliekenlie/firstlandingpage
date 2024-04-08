@@ -1,0 +1,453 @@
+body {
+  background: linear-gradient(to right, #E6A4B4, #DCAE96 );
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+  margin: 40px 0;
+}
+
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+.logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+/* Header */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur (10px);
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.4s ease;
+}
+
+#navbar li a:hover, 
+#navbar li a.active{
+    color: #E6A4B4;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #E6A4B4;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/*Home Page*/
+#hero{
+    background-image: url("shoemodel.png");
+    height: 82vh;
+    width: 100%;
+    background-size: 45%;
+    background-position: top 25% right 15%;
+    background-repeat: no-repeat;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+#hero h3{
+    font-size: 50px;
+    margin-bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#hero h1{
+    font-size: 90px;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#hero p{
+    font-size: 40px;
+    margin-top: 0;
+    color: #90645a;
+
+}
+
+   .shopbutton {
+    position: relative;
+    padding: 16px 32px 8px 40px; 
+    color: #000000;
+    border: 3px solid #E6A4B4;
+    -webkit-transition: padding 0.3s ease-in-out;
+    transition: padding 0.3s ease-in-out;
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.04s ease;
+    cursor: pointer;
+  }
+  
+  .shopbutton:before {
+    content: "";
+    position: absolute;
+    top: 8px; 
+    left: 8px; 
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    border-right: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .shopbutton:hover {
+    padding: 12px 18px;
+    color: #E6A4B4;
+  }
+  
+  .shopbutton:hover:before {
+    top: 0;
+    left: 0;
+  }
+
+  #feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  .fs{
+    height: 160px;
+    width: 160px;
+  }
+
+  #feature .fs-box{
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur (10px);
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.4);
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 15px 0;
+  }
+  #feature .fs-box:hover{
+    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.5);
+  }
+
+  #feature .fs-box h3{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    background-color: #E6A4B4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  #feature .fs-box img{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #product1{
+    text-align: center;
+  }
+
+  #product1 .shoe-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  #product1 h2{
+    font-size: 60px;
+    margin: 0;
+  }
+  #product1 p{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+
+  #product1 .shoe{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+    margin: 12px 0;
+    position: relative;
+  }
+
+  #product1 .shoe:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 1);
+    transition: 3s ease;
+  }
+
+  #product1 .shoe img{
+    width: 100%;
+    height: 250px;
+    border-radius: 20px ;
+  }
+
+  #product1 .shoe .des{
+    text-align: start;
+    padding: 10px 0;
+  }
+
+  #product1 .shoe .des span{
+    color: black;
+    font-size: 14px;
+  }
+
+  #product1 .shoe .des h5{
+    padding-top: 7px;
+    color: #000000;
+    font-size: 20px;
+  }
+
+  #product1 .shoe .des i{
+    font-size: 14px;
+    color: gold;
+  }
+
+  #product1 .shoe .des h4{
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+  }
+
+  #product1 .shoe .cart{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50px;
+    background-color: white;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+  }
+
+  #Banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("banner.png");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #Banner h4{
+    color: black;
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+
+  #Banner h2{
+    color: black;
+    font-size: 54px;
+    padding: 10px 0;
+    margin-top: 0;
+  }
+
+  #Banner h2 span{
+    color: #ef3636;
+  }
+
+  #Banner button:hover{
+    background-color: #E6A4B4;
+    color: white;
+  }
+
+  #newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("bg11.jpeg");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #000000;
+  }
+
+  #newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+
+  }
+
+  #newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  #newsletter p span{
+    color: gold;
+  }
+
+  #newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  #newsletter button{
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  #newsletter .newstext{
+    margin-left: 60px;
+  }
+
+  #newsletter .form{
+    margin-right: 60px;
+    display: flex;
+    width: 40%;
+  }
+
+
+    footer{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    footer .col{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      margin-left: 180px;
+      margin-right: 180px;
+    }
+
+    footer .logologo{
+      margin-bottom: 30px;
+    }
+
+    footer h4{
+      font-size: 14px;
+      padding-bottom: 20px;
+    }
+
+    footer p{
+      font-size: 13px;
+      margin: 0 0 8px 0;
+    }
+
+    footer a{
+      font-size: 13px;
+      text-decoration: none;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    footer .follow{
+      margin-top: 20px;
+    }
+
+    footer .follow i{
+      color: #465b52;
+      padding-right: 4px;
+      cursor: pointer;
+    }
+
+    footer .follow i:hover, 
+    footer a:hover {
+      color: #088178;
+    }
+
+    footer .copyright{
+      width: 100%;
+      text-align: center;
+      background-color: #000000;
+      color: #fff;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+
+    /*Media Query */
+    @media (max-width: 799px){
+      #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    #hero {
+      background-image: url("shoemodel.png");
+      height: 82vh;
+      width: 100%;
+      background-size: 45%;
+      background-position: right 15% top 25%;
+      background-repeat: no-repeat;
+      padding: 0px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      overflow-x: hidden;
+  }
+    }
